@@ -18,10 +18,10 @@
   {
     "title": "College Ruled",
     "imageSrc": "media/projects/college-ruled.jpg",
-    "imageAlt": "College Ruled social simulation interface",
+    "imageAlt": "College Ruled Dramatic Management In Action",
     "category": "Interactive Narrative & Social Simulation",
     "status": "Ongoing",
-    "description": "A dynamic interactive narrative system exploring complex social dynamics and interpersonal relationships. College Ruled leverages advanced state tracking to simulate the nuanced, high-stakes environment of a digital community, allowing players to navigate a highly reactive environment where every dialogue choice fundamentally alters the simulated social fabric."
+    "description": "College Ruled is a storytelling system iterating on past works in static story generation, utilizing a system of storylets, story waypoints, drama management, and causality weighting to guide event selection in response to authorial input. It allows for a high degree of authorial influence over how character relationships are shaped and provides agency over the dramatic arc of a spun tale, while allowing sequences of interrelated events to bubble to the surface as they build towards desired narrative goals. Its storylet-focused building-block approach allows for generated narratives to remain above the abstract level, producing readable story-like text."
   },
   {
     "title": "Alternation",
