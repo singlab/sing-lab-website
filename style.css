@@ -1000,6 +1000,28 @@ body.dark-theme .banner-text strong {
         box-sizing: border-box;
         white-space: normal; /* Ensures long text wraps instead of breaking the layout */
     }
+
+    /* =========================================
+       Featured Event Mobile Overrides
+       ========================================= */
+    .featured-event {
+        padding: 1.5rem; /* Reduces the massive desktop padding */
+    }
+
+    .event-title h2 {
+        font-size: 2rem; /* Scales down the title slightly to prevent awkward wrapping */
+    }
+
+    .countdown {
+        flex-wrap: wrap; /* Allows the timer boxes to stack neatly on tiny screens */
+        justify-content: flex-start;
+    }
+    
+    /* Ensures the subtle watermark doesn't accidentally stretch the mobile viewport */
+    .featured-event::after {
+        font-size: 12rem;
+        bottom: -60px;
+    }
 }
 
 /* =========================================
