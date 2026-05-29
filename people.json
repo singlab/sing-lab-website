@@ -10,8 +10,7 @@
         "email": "jamccoy@ucdavis.edu",
         "socials": {
           "website": "https://joshmccoy.com/",
-          "github": "https://github.com/dr-jam",
-          "twitter": "https://twitter.com/janedoe"
+          "github": "https://github.com/dr-jam"
         }
       }
     ]
@@ -26,9 +25,7 @@
         "imageSrc": "media/people/arunpreet.jpeg",
         "email": "asisandhu@ucdavis.edu",
         "socials": {
-          "website": "https://janedoe.com",
-          "github": "https://github.com/CandhuSandhu",
-          "twitter": "https://twitter.com/janedoe"
+          "github": "https://github.com/CandhuSandhu"
         }
       },
       {
@@ -38,9 +35,7 @@
         "imageSrc": "media/people/kyle.png",
         "email": "kdmitch@ucdavis.edu",
         "socials": {
-          "website": "https://janedoe.com",
-          "github": "https://github.com/kdavidmitchell",
-          "twitter": "https://twitter.com/janedoe"
+          "github": "https://github.com/kdavidmitchell"
         }
       },
       {
@@ -50,9 +45,7 @@
         "imageSrc": "media/people/nicholas.jpeg",
         "email": "ntreynor@ucdavis.edu",
         "socials": {
-          "website": "https://janedoe.com",
-          "github": "https://github.com/NTreynor",
-          "twitter": "https://twitter.com/janedoe"
+          "github": "https://github.com/NTreynor"
         }
       }
     ]

@@ -476,6 +476,13 @@ nav {
     flex-grow: 1;
 }
 
+/* Forces project images to show their full width without cropping */
+.project-card .image-frame {
+    object-fit: contain;
+    background-color: var(--bg-secondary); /* Provides a nice matte backdrop for any empty space */
+    border-bottom: 2px solid var(--text-main); /* Optional: Gives the bottom edge a clean structural line */
+}
+
 /* =========================================
    8. PUBLICATIONS PAGE: PUBLICATION LISTS
    ========================================= */

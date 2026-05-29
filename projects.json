@@ -5,15 +5,15 @@
     "imageAlt": "Stay Thy Blade interactive narrative interface",
     "category": "Interactive Character Simulation",
     "status": "Ongoing",
-    "description": "An experimental interactive experience that re-envisions iconic figures from William Shakespeare's plays as psychologically nuanced AI characters. Using a custom-designed character AI architecture integrated with Large Language Models, players engage in real-time dialogue to influence these characters' internal states. The core objective across all scenarios is to de-escalate their agitation and dissuade them from committing the tragic violence their stories are known for. Character responses emerge dynamically from their core personality traits, shifting emotional states, and evolving internal beliefs, serving as a robust testbed for believable, responsive digital actors."
+    "description": "An experimental interactive experience that re-envisions iconic figures from William Shakespeare's plays as psychologically nuanced AI characters. Using a custom-designed character AI architecture integrated with Large Language Models, players engage in real-time dialogue to influence these characters' internal states. The core objective across all scenarios is to de-escalate their agitation and dissuade them from committing the tragic violence their stories are known for. Character responses emerge dynamically from their core personality traits, shifting emotional states, and evolving internal beliefs, serving as a testbed for believable digital actors."
   },
   {
-    "title": "The Glass Box Theatre",
-    "imageSrc": "media/projects/glass-box-theatre.jpg",
-    "imageAlt": "The Glass Box Theatre interactive performance interface",
+    "title": "The Glass Box",
+    "imageSrc": "media/projects/the-glass-box.png",
+    "imageAlt": "The Glass Box game interface",
     "category": "Computational Performance & Digital Actors",
     "status": "Ongoing",
-    "description": "An interactive drama experience pushing the boundaries of digital acting. Driven by a custom three-layer cognitive architecture inspired by the Stanislavskian acting method, the system’s core—'Viv'—allows digital actors to maintain highly subjective realities. Instead of relying on static scripts, characters dynamically translate player actions into personal beliefs, filter potential reactions through weighted personality traits, and use defeasible logic to resolve internal conflicts. The result is a profoundly reactive environment where actors generate physically and psychologically coherent performances in real-time."
+    "description": "A system-driven, tech-noir puzzle-investigation experience pushing the boundaries of game AI. Driven by the custom 'Viv' architecture—inspired by the Stanislavskian acting method—the system strictly decouples the mind from the body to allow non-player characters to maintain highly subjective realities fractured by human emotion. Instead of relying on static scripts, characters dynamically evaluate behaviors and use defeasible logic to negotiate their internal conflicts. Stepping into the shoes of a disgraced Cognitive Auditor, players must navigate a rainy, analog-futuristic city to hunt down compromised citizens, shatter their programming, and compile recovered human truths to engineer a systemic exploit that will crash an oppressive bureaucracy forever."
   },
   {
     "title": "College Ruled",
@@ -25,10 +25,10 @@
   },
   {
     "title": "Alternation",
-    "imageSrc": "media/projects/alternation.jpg",
+    "imageSrc": "media/projects/alternation.png",
     "imageAlt": "Alternation Interface",
     "category": "Social AI & Procedurally-Generated Worlds",
     "status": "Ongoing",
-    "description": "[Details to come.]"
+    "description": "Alternation is an experimental system focused on integrating procedural content generation (PCG) with social characters to enable dynamic socio-spatial reasoning. Utilizing a unified knowledge representation that bridges the digital environment and the agent logic, characters make nuanced decisions by dynamically reading environmental affordances. Additionally, by integrating social characters with the environment, the PCG systems are empowered to create spaces that are not only playable, but also shaped by the characters. The core objective is to link level design with character AI, allowing spatial layouts and architectural contexts to directly govern behavioral choices. Ultimately, this framework serves as a design testbed for exploring gameplay driven by space and social agency."
   }
 ]
