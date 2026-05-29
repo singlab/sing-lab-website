@@ -49,8 +49,3 @@ You do not need to touch the HTML to update the lab's portfolio. All dynamic con
 * **To add a new publication:** Open `publications.json` and add a new entry following the existing schema.
 * **To add a new team member:** Drop their headshot into the `media/` folder, then add their details and image path to `people.json`.
 * **To add a new project:** Drop the project image into the `media/` folder, then add the project details to `projects.json`.
-
-## Deployment (GitHub Pages)
-
-This repository is optimized to be hosted entirely for free via **GitHub Pages**. 
-Simply push your `main` branch to GitHub, navigate to your repository **Settings > Pages**, and set the source to deploy from the `main` branch root. Your JSON files will be served correctly and fetch automatically in the live environment.
