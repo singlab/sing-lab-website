@@ -23,6 +23,7 @@ To ensure long-term maintainability by lab members without requiring complex bui
 * `script.js` - Global interactive logic and JSON `fetch()` requests
 * `*.json` - Data sources for dynamic pages (`projects.json`, `publications.json`, `people.json`)
 * `media/` - Consolidated directory for all project images and team avatars
+* `links/` - Consolidated directory for publication information (PDF and bibtex)
 
 ## Local Development & Testing
 
