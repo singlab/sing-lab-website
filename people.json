@@ -47,6 +47,16 @@
         "socials": {
           "github": "https://github.com/NTreynor"
         }
+      },
+      {
+        "name": "Rachel Heleva",
+        "role": "Ph.D. Student",
+        "bio": "Rachel Heleva is an incoming PhD student in Performance Studies at UC Davis working at the intersection of games, computational poetics, interactive narrative, and public humanities. Her research explores games as systems of interpretation, authorship, and public participation, with a focus on how procedural structures can make meaning-making visible and playable. Her current project, In Countless Shadows, models Shakespeare’s sonnets as combinatorial puzzle systems. She is also the Executive Director of the Museum of Art and Digital Entertainment in Oakland, where she is developing the museum as a public lab for playable culture, preservation, education, and civic imagination.",
+        "imageSrc": "media/people/rachel.png",
+        "email": "rlheleva@ucdavis.edu",
+        "socials": {
+          "twitter": "https://twitter.com/rachelheleva"
+        }
       }
     ]
   }
