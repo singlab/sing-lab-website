@@ -1,0 +1,26 @@
+{
+  "press": [
+    {
+      "title": "UC Davis Lab Explores the Frontier of Social AI in Games",
+      "outlet": "WIRED",
+      "date": "May 12, 2026",
+      "url": "https://example.com/wired",
+      "description": "An in-depth profile on the SING Lab's research into modeling human sociology and computational narrative engines."
+    }
+  ],
+  "community": [
+    {
+      "name": "Narrative Intelligence Reading Group",
+      "schedule": "Weekly on Wednesdays, 4:00 PM",
+      "location": "Kemper Hall 1121 & Zoom",
+      "description": "A collaborative reading circle discussing computational narrative, procedural generation, and expressive AI."
+    }
+  ],
+  "timeline": [
+    {
+      "date": "April 2026",
+      "category": "award",
+      "text": "Dr. Joshua McCoy received a UC Davis grant for research in expressive AI systems."
+    }
+  ]
+}

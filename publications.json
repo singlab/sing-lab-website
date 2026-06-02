@@ -9,7 +9,8 @@
         "details": "vol. 21, num. 1, pp. 287-296",
         "links": {
           "pdf": "links/mitchell_2025_method.pdf",
-          "bibtex": "links/mitchell_2025_method_bib.txt"
+          "bibtex": "links/mitchell_2025_method_bib.txt",
+          "doi": " https://doi.org/10.1609/aiide.v21i1.36832"
         }
       },
       {
@@ -19,7 +20,8 @@
         "details": "vol. 21, num. 1, pp. 434-437",
         "links": {
           "pdf": "links/mitchell_2025_monologue.pdf",
-          "bibtex": "links/mitchell_2025_monologue_bib.txt"
+          "bibtex": "links/mitchell_2025_monologue_bib.txt",
+          "doi": "https://doi.org/10.1609/aiide.v21i1.36854"
         }
       },
       {
@@ -29,7 +31,8 @@
         "details": "pp. 1-7",
         "links": {
           "pdf": "links/treynor_2025_perception.pdf",
-          "bibtex": "links/treynor_2025_perception_bib.txt"
+          "bibtex": "links/treynor_2025_perception_bib.txt",
+          "doi": "https://doi.org/10.1109/CoG64752.2025.11114155"
         }
       },
       {
@@ -39,7 +42,8 @@
         "details": "pp. 1-2",
         "links": {
           "pdf": "links/treynor_2025_shakespeare.pdf",
-          "bibtex": "links/treynor_2025_shakespeare_bib.txt"
+          "bibtex": "links/treynor_2025_shakespeare_bib.txt",
+          "doi": "https://doi.org/10.1109/CoG64752.2025.11114309"
         }
       }
     ]
@@ -53,7 +57,8 @@
         "venue": "Proceedings of the 19th International Conference on the Foundations of Digital Games",
         "links": {
           "pdf": "links/treynor_2024_college.pdf",
-          "bibtex": "links/treynor_2024_college_bib.txt"
+          "bibtex": "links/treynor_2024_college_bib.txt",
+          "doi": "https://doi.org/10.1145/3649921.3649994"
         }
       },
       {
@@ -62,7 +67,8 @@
         "venue": "Proceedings of the 24th ACM International Conference on Intelligent Virtual Agents",
         "links": {
           "pdf": "links/mitchell_2024_stanislavskian.pdf",
-          "bibtex": "links/mitchell_2024_stanislavskian_bib.txt"
+          "bibtex": "links/mitchell_2024_stanislavskian_bib.txt",
+          "doi": "https://doi.org/10.1145/3652988.3673953"
         }
       }
     ]
@@ -77,7 +83,18 @@
         "details": "pp. 1-4",
         "links": {
           "pdf": "links/mitchell_2023_ontology.pdf",
-          "bibtex": "links/mitchell_2023_ontology_bib.txt"
+          "bibtex": "links/mitchell_2023_ontology_bib.txt",
+          "doi": "https://doi.org/10.1145/3582437.3587201"
+        }
+      },
+      {
+        "title": "Sunset Valley: A Case Study in Computational Gossip",
+        "authors": "Fuhsin Liao, Grant Gelardi, Arunpreet Sandhu, Kyle Mitchell, Joshua McCoy",
+        "venue": "2023 IEEE Conference on Games (CoG)",
+        "links": {
+          "pdf": "links/liao_2023_sunset_valley.pdf",
+          "bibtex": "links/liao_2023_sunset_valley_bib.txt",
+          "doi": "https://doi.org/10.1109/CoG57401.2023.10333161"
         }
       }
     ]
@@ -92,7 +109,8 @@
         "details": "vol. 18, num. 1, pp. 279-281",
         "links": {
           "pdf": "links/mitchell_2022_never.pdf",
-          "bibtex": "links/mitchell_2022_never_bib.txt"
+          "bibtex": "links/mitchell_2022_never_bib.txt",
+          "doi": "https://doi.org/10.1609/aiide.v18i1.21974"
         }
       },
       {
@@ -129,7 +147,8 @@
         "venue": "Proceedings of the 14th International Conference on the Foundations of Digital Games",
         "links": {
           "pdf": "links/sandhu_2019_framework.pdf",
-          "bibtex": "links/sandhu_2019_framework_bib.txt"
+          "bibtex": "links/sandhu_2019_framework_bib.txt",
+          "doi": "https://doi.org/10.1145/3337722.3341839"
         }
       },
       {
@@ -138,7 +157,8 @@
         "venue": "Proceedings of the 14th International Conference on the Foundations of Digital Games",
         "links": {
           "pdf": "links/sandhu_2019_enhancing.pdf",
-          "bibtex": "links/sandhu_2019_enhancing_bib.txt"
+          "bibtex": "links/sandhu_2019_enhancing_bib.txt",
+          "doi": "https://doi.org/10.1145/3337722.3337752"
         }
       }
     ]

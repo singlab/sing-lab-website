@@ -215,6 +215,9 @@ if (pubContainer) {
                         if (paper.links.bibtex) {
                             linksHTML += `<a href="${paper.links.bibtex}" target="_blank" class="pub-action-btn">BibTeX</a>`;
                         }
+                        if (paper.links.doi) {
+                            linksHTML += `<a href="${paper.links.doi}" target="_blank" class="pub-action-btn">DOI</a>`;
+                        }
                     }
                     linksHTML += '</div>';
                     
@@ -462,3 +465,79 @@ if (unstableText) {
         window.location.href = '404.html';
     });
 }
+// =========================================
+// JSON Data Fetching: News & Community
+// =========================================
+const pressContainer = document.getElementById("press-container");
+const communityContainer = document.getElementById("community-container");
+const timelineContainer = document.getElementById("timeline-container");
+
+if (pressContainer && communityContainer && timelineContainer) {
+    fetch("news.json")
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Could not load community data.");
+            }
+            return response.json();
+        })
+        .then(data => {
+            // Render Press
+            pressContainer.innerHTML = "";
+            if (data.press && data.press.length > 0) {
+                data.press.forEach(item => {
+                    const card = document.createElement("div");
+                    card.className = "newspaper-card";
+                    card.innerHTML = `
+                        <h3>${item.title}</h3>
+                        <div class="newspaper-meta"><strong>${item.outlet}</strong> • ${item.date}</div>
+                        <p>${item.description}</p>
+                        ${item.url ? `<a href="${item.url}" target="_blank" class="read-more">READ FULL STORY</a>` : ""}
+                    `;
+                    pressContainer.appendChild(card);
+                });
+            } else {
+                pressContainer.innerHTML = "<p class=\"text-italic-muted\">No press mentions available at this time.</p>";
+            }
+
+            // Render Community
+            communityContainer.innerHTML = "";
+            if (data.community && data.community.length > 0) {
+                data.community.forEach(item => {
+                    const block = document.createElement("div");
+                    block.className = "community-item";
+                    block.innerHTML = `
+                        <h4>${item.name}</h4>
+                        <span class="community-meta">${item.schedule} | ${item.location}</span>
+                        <p style="font-size: 0.9rem;">${item.description}</p>
+                    `;
+                    communityContainer.appendChild(block);
+                });
+            } else {
+                communityContainer.innerHTML = "<p class=\"text-italic-muted\">No community groups currently listed.</p>";
+            }
+
+            // Render Timeline
+            timelineContainer.innerHTML = "";
+            if (data.timeline && data.timeline.length > 0) {
+                data.timeline.forEach(item => {
+                    const log = document.createElement("div");
+                    log.className = "log-item";
+                    log.innerHTML = `
+                        <span class="log-date">${item.date}</span>
+                        <p class="log-text">${item.text}</p>
+                    `;
+                    timelineContainer.appendChild(log);
+                });
+            } else {
+                timelineContainer.innerHTML = "<p class=\"text-italic-muted\">No recent updates in the log.</p>";
+            }
+        })
+        .catch(error => {
+            const errStr = `<p style="color: red;">Error loading community data.</p>`;
+            pressContainer.innerHTML = errStr;
+            communityContainer.innerHTML = errStr;
+            timelineContainer.innerHTML = errStr;
+            console.error("Fetch error:", error);
+        });
+}
+

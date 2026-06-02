@@ -1158,3 +1158,138 @@ body.terminal-theme #theme-toggle {
     85%  { transform: translateX(-8px); }
     100% { transform: translateX(0); }
 }
+
+/* =========================================
+   13. NEWS & COMMUNITY PAGE
+   ========================================= */
+
+.news-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.newspaper-card {
+    background-color: var(--bg-main);
+    padding: 2rem;
+    border: 3px solid var(--text-main);
+    border-radius: 2px;
+    box-shadow: 6px 6px 0px var(--accent-gold);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.newspaper-card:before {
+    content: "PRESS";
+    position: absolute;
+    top: 5px;
+    right: -45px;
+    background-color: var(--accent-gold);
+    color: var(--bg-main);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center ;
+    padding: 0.85rem 3.5rem;
+    transform: rotate(45deg);
+    letter-spacing: 1px;
+}
+
+.newspaper-card h3 {
+    color: var(--text-main);
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.newspaper-meta {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--accent-blue);
+    border-bottom: 1px dashed var(--border-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.newspaper-meta strong {
+    color: var(--accent-gold);
+}
+
+.newspaper-card a.read-more {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--accent-gold);
+    text-decoration: none;
+    align-self: flex-start;
+    margin-top: 1rem;
+    border: 1px solid var(--accent-gold);
+    padding: 0.3rem 0.8rem;
+    transition: all 0.2s ease;
+}
+
+.newspaper-card a.read-more:hover {
+    background-color: var(--accent-gold);
+    color: var(--bg-main);
+}
+
+/* Community Outposts */
+.community-item {
+    background-color: var(--bg-secondary);
+    padding: 1.5rem;
+    border-left: 4px solid var(--accent-blue);
+    margin-bottom: 1.5rem;
+}
+
+.community-item h4 {
+    color: var(--text-main);
+    margin-bottom: 0.2rem;
+}
+
+.community-meta {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 0.8rem;
+    display: block;
+}
+
+/* Chronicle */
+.log-timeline {
+    position: relative;
+    padding-left: 1.5rem;
+    border-left: 2px solid var(--border-color);
+}
+
+.log-item {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.log-item::before {
+    content: "";
+    position: absolute;
+    left: -1.8rem;
+    top: 0.3rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--accent-gold);
+    border: 2px solid var(--bg-main);
+}
+
+.log-date {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--accent-blue);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.2rem;
+}
+
+.log-text {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+

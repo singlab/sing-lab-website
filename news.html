@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover featured projects from the UC Davis SING Lab, including interactive narrative engines, expressive intelligence systems, and social AI.">
-    <title>Projects | SING Lab</title>
+    <meta name="description" content="Lab news, press mentions, community initiatives, and chronological updates from the SING Lab at UC Davis.">
+    <title>News & Community | SING Lab</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Inter:wght@300;400;600&family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
 </head>
@@ -38,17 +38,36 @@
 
     <header class="hero">
         <div class="container hero-content">
-            <h1 id="glitch-target">Featured Projects</h1>
-            <p>Highlighting our most successful systems in computational narrative and expressive intelligence.</p>
+            <h1 id="glitch-target">News & Community</h1>
+            <p>Press mentions, community engagements, and other chronicles.</p>
         </div>
     </header>
 
-    <section class="container">
-        <div class="project-grid" id="projects-grid">
-            
-            <p id="loading-projects-message" class="text-italic-muted">Loading projects...</p>
-
+    <section class="container split-layout tab-split" style="gap: 4rem;">
+        
+        <div class="news-main-column">
+            <h2>Press & Media</h2>
+            <div id="press-container" class="news-grid">
+                <p class="text-italic-muted">Loading press mentions...</p>
+            </div>
         </div>
+        
+        <div class="news-side-column">
+            <div class="community-block">
+                <h2>Community</h2>
+                <div id="community-container">
+                    <p class="text-italic-muted">Loading community outposts...</p>
+                </div>
+            </div>
+            
+            <div class="timeline-block" style="margin-top: 3rem;">
+                <h2>Chronicle</h2>
+                <div id="timeline-container" class="log-timeline">
+                    <p class="text-italic-muted">Loading activity log...</p>
+                </div>
+            </div>
+        </div>
+
     </section>
 
     <script src="script.js"></script>

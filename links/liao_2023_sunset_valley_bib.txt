@@ -1,0 +1,10 @@
+@INPROCEEDINGS{10333161,
+  author={Liao, Fuhsin and Gelardi, Grant and Mitchell, Kyle and Sandhu, Arunpreet and McCoy, Joshua},
+  booktitle={2023 IEEE Conference on Games (CoG)}, 
+  title={Sunset Valley: A Case Study in Computational Gossip}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-5},
+  keywords={Video games;Analytical models;Computational modeling;Oceans;Sociology;Prototypes;Games;Computational gossip;sociology;social-psychology;character believability},
+  doi={10.1109/CoG57401.2023.10333161}}
