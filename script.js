@@ -131,23 +131,33 @@ if (glitchTarget) {
 const countdownElement = document.getElementById('symposium-countdown');
 
 if (countdownElement) {
-    // Set to June 5, 2026
-    const symposiumDate = new Date('June 5, 2026 09:00:00').getTime();
+    // Allow for previewing the states via URL parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const previewState = urlParams.get('preview');
+
+    // Set to June 5, 2026 at Noon
+    const symposiumDate = new Date('June 5, 2026 12:00:00').getTime();
+    const symposiumEndDate = new Date('June 5, 2026 17:30:00').getTime();
 
     const updateTimer = setInterval(() => {
         const now = new Date().getTime();
-        const distance = symposiumDate - now;
+        const distanceToStart = symposiumDate - now;
+        const distanceToEnd = symposiumEndDate - now;
 
-        if (distance < 0) {
+        if (distanceToEnd < 0 || previewState === 'concluded') {
             clearInterval(updateTimer);
-            countdownElement.innerHTML = "<div class='time-box'><span>LIVE</span><small>Event Started</small></div>";
+            countdownElement.innerHTML = "<div class='time-box'><span>CONCLUDED</span><small>Thanks for joining!</small></div>";
+            return;
+        } else if (distanceToStart < 0 || previewState === 'ongoing') {
+            // Keep interval running to catch the end time later
+            countdownElement.innerHTML = "<div class='time-box'><span>ONGOING</span><small>Event Started</small></div>";
             return;
         }
 
         // Time calculations
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const days = Math.floor(distanceToStart / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distanceToStart % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distanceToStart % (1000 * 60 * 60)) / (1000 * 60));
 
         // Inject the HTML
         countdownElement.innerHTML = `

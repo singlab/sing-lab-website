@@ -922,6 +922,44 @@ body.dark-theme .banner-text strong {
     font-style: italic;
 }
 
+/* Structured Talk Details for Timeline */
+.talk-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 0.8rem;
+}
+
+.talk {
+    border-left: 2px solid var(--accent-gold);
+    padding-left: 1rem;
+}
+
+.speaker-info {
+    font-size: 0.95rem;
+    color: var(--text-main);
+    margin-bottom: 0.2rem;
+}
+
+.speaker-name {
+    font-weight: 600;
+    color: var(--accent-blue);
+}
+
+.speaker-title {
+    font-style: italic;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+.talk-title {
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    color: var(--text-main);
+    font-weight: 600;
+    line-height: 1.4;
+}
+
 /* =========================================
    14. MOBILE VIEWPORTS & RESPONSIVE DESIGN
    ========================================= */
