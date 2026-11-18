@@ -9,5 +9,11 @@
     }
   ],
   "community": [],
-  "timeline": []
+  "timeline": [
+    {
+      "date": "November 2026",
+      "category": "award",
+      "text": "Stay Thy Blade won the Best Case Study award at AIIDE 2026 for \"Stay Thy Blade! NLP and Symbolic Systems for Conversational Gameplay.\""
+    }
+  ]
 }

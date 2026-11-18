@@ -1,5 +1,52 @@
 [
   {
+    "year": "2026",
+    "papers": [
+      {
+        "title": "Stay Thy Blade! NLP and Symbolic Systems for Conversational Gameplay",
+        "authors": "Nicholas Sloss Treynor, Kyle Mitchell, Halil Ozgur Demir, Nick Toothman, Gina Bloom, Colin Milburn, Michael Neff, Joshua McCoy",
+        "venue": "Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment",
+        "details": "vol. 22, num. 1, pp. 464-465",
+        "links": {
+          "pdf": "links/treynor_2026_stb.pdf",
+          "bibtex": "links/treynor_2026_stb_bib.txt",
+          "doi": "https://doi.org/10.1609/aiide.v22i1.43606"
+        }
+      },
+      {
+        "title": "Narrative Superposition and Storylets for Story Generation",
+        "authors": "Nicholas Sloss Treynor",
+        "venue": "Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment",
+        "details": "vol. 22, num. 1, pp. 480-483",
+        "links": {
+          "pdf": "links/treynor_2026_superposition.pdf",
+          "bibtex": "links/treynor_2026_superposition_bib.txt",
+          "doi": "https://doi.org/10.1609/aiide.v22i1.43610"
+        }
+      },
+      {
+        "title": "You Are Rhyme: Making Shakespeare's Formactions Playable",
+        "authors": "Rachel Heleva, Kyle Mitchell, Joshua McCoy",
+        "venue": "Proceedings of the Workshop on Automated Game Design (WAGD) at AIIDE-26",
+        "links": {
+          "pdf": "links/heleva_2026_yar.pdf",
+          "bibtex": "links/heleva_2026_yar_bib.txt"
+        }
+      },
+      {
+        "title": "Breaking the Death Spiral: Balancing Authenticity and Feasibility in Parameterized Narrative AI",
+        "authors": "Kyle Mitchell, Nick Treynor, Halil Ozgur Demir, Nick Toothman, Gina Bloom, Colin Milburn, Michael Neff, Joshua McCoy",
+        "venue": "2026 IEEE Conference on Games (CoG)",
+        "details": "pp. 1-8",
+        "links": {
+          "pdf": "links/mitchell_2026_breaking.pdf",
+          "bibtex": "links/mitchell_2026_breaking_bib.txt",
+          "doi": "https://doi.org/10.1109/cog67430.2026.11778818"
+        }
+      }
+    ]
+  },
+  {
     "year": "2025",
     "papers": [
       {

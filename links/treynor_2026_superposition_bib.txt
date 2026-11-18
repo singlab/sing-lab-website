@@ -1,0 +1,11 @@
+@article{treynor_narrative_2026,
+  title     = {Narrative Superposition and Storylets for Story Generation},
+  author    = {Treynor, Nicholas Sloss},
+  journal   = {Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment},
+  volume    = {22},
+  number    = {1},
+  pages     = {480--483},
+  year      = {2026},
+  month     = {Nov.},
+  doi       = {10.1609/aiide.v22i1.43610}
+}

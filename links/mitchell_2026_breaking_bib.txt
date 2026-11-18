@@ -1,0 +1,10 @@
+@inproceedings{mitchell_breaking_2026,
+  title     = {Breaking the Death Spiral: Balancing Authenticity and Feasibility in Parameterized Narrative AI},
+  author    = {Mitchell, Kyle and Treynor, Nick and Demir, Halil Ozgur and Toothman, Nick and Bloom, Gina and Milburn, Colin and Neff, Michael and McCoy, Joshua},
+  booktitle = {2026 IEEE Conference on Games (CoG)},
+  pages     = {1--8},
+  year      = {2026},
+  month     = {Sept.},
+  publisher = {IEEE},
+  doi       = {10.1109/cog67430.2026.11778818}
+}

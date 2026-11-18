@@ -1,0 +1,7 @@
+@inproceedings{heleva_rhyme_2026,
+  title     = {You Are Rhyme: Making Shakespeare's Formactions Playable},
+  author    = {Heleva, Rachel and Mitchell, Kyle and McCoy, Joshua},
+  booktitle = {Proceedings of the Workshop on Automated Game Design (WAGD) at AIIDE-26},
+  year      = {2026},
+  month     = {Nov.}
+}

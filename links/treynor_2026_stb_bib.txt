@@ -1,0 +1,11 @@
+@article{treynor_stay_2026,
+  title     = {Stay Thy Blade! NLP and Symbolic Systems for Conversational Gameplay},
+  author    = {Treynor, Nicholas Sloss and Mitchell, Kyle and Demir, Halil Ozgur and Toothman, Nick and Bloom, Gina and Milburn, Colin and Neff, Michael and McCoy, Joshua},
+  journal   = {Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment},
+  volume    = {22},
+  number    = {1},
+  pages     = {464--465},
+  year      = {2026},
+  month     = {Nov.},
+  doi       = {10.1609/aiide.v22i1.43606}
+}
