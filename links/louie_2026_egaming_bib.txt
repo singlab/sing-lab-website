@@ -1,0 +1,10 @@
+@article{louie_egaming_2026,
+  title     = {eGaming as an Introduction to Engineering Design},
+  author    = {Louie, Angelique and Kapre, Rohan and Newcomb, Adele and Mitchell, Kyle and Ohman, Lauren and Rusit, Justin and Mikulski, Logan and Scott, Ashley and Degand, Darnel and Choi, Jennifer and McCoy, Joshua},
+  journal   = {Biomedical Engineering Education},
+  publisher = {Springer Science and Business Media LLC},
+  year      = {2026},
+  month     = {Nov.},
+  issn      = {2730-5945},
+  doi       = {10.1007/s43683-026-00257-2}
+}

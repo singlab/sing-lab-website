@@ -3,6 +3,16 @@
     "year": "2026",
     "papers": [
       {
+        "title": "eGaming as an Introduction to Engineering Design",
+        "authors": "Angelique Louie, Rohan Kapre, Adele Newcomb, Kyle Mitchell, Lauren Ohman, Justin Rusit, Logan Mikulski, Ashley Scott, Darnel Degand, Jennifer Choi, Joshua McCoy",
+        "venue": "Biomedical Engineering Education",
+        "links": {
+          "pdf": "links/louie_2026_egaming.pdf",
+          "bibtex": "links/louie_2026_egaming_bib.txt",
+          "doi": "https://doi.org/10.1007/s43683-026-00257-2"
+        }
+      },
+      {
         "title": "Stay Thy Blade! NLP and Symbolic Systems for Conversational Gameplay",
         "authors": "Nicholas Sloss Treynor, Kyle Mitchell, Halil Ozgur Demir, Nick Toothman, Gina Bloom, Colin Milburn, Michael Neff, Joshua McCoy",
         "venue": "Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment",

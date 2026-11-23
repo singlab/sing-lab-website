@@ -30,5 +30,13 @@
     "category": "Social AI & Procedurally-Generated Worlds",
     "status": "Ongoing",
     "description": "Alternation is an experimental system focused on integrating procedural content generation (PCG) with social characters to enable dynamic socio-spatial reasoning. Utilizing a unified knowledge representation that bridges the digital environment and the agent logic, characters make nuanced decisions by dynamically reading environmental affordances. Additionally, by integrating social characters with the environment, the PCG systems are empowered to create spaces that are not only playable, but also shaped by the characters. The core objective is to link level design with character AI, allowing spatial layouts and architectural contexts to directly govern behavioral choices. Ultimately, this framework serves as a design testbed for exploring gameplay driven by space and social agency."
+  },
+  {
+    "title": "You Are Rhyme",
+    "imageSrc": "media/projects/you-are-rhyme.jpg",
+    "imageAlt": "You Are Rhyme voice-controlled tactical game interface",
+    "category": "Computational Performance & Automated Game Design",
+    "status": "Ongoing",
+    "description": "An experimental voice-activated tactical game that translates theatrical performance into playable spatial mechanics. Drawing on Simon Palfrey's concept of formactions and adapting Act 3, Scene 4 of Shakespeare's Hamlet, players speak scripted lines whose acoustic qualities—volume, dramatic silences, pacing, and textual deviation—compile into asymmetric actions for Hamlet and Gertrude on a 2D stage grid. An offline MAP-Elites evolutionary algorithm and persona-based automated playtesting pipeline generate diverse, balanced stage layouts so vocal delivery and spatial architecture reciprocally shape each dramatic encounter."
   }
 ]
