@@ -1331,3 +1331,21 @@ body.terminal-theme #theme-toggle {
     color: var(--text-muted);
 }
 
+/* =========================================
+   13. EVENT ARCHIVE COLLAPSIBLE UI
+   ========================================= */
+.past-event-collapsed .event-details-wrapper {
+    display: none;
+}
+
+.toggle-details-btn {
+    background-color: transparent;
+    color: var(--text-main);
+    border: 2px solid var(--text-main);
+    margin-top: 1rem;
+}
+
+.toggle-details-btn:hover {
+    background-color: var(--text-main);
+    color: var(--bg-main);
+}

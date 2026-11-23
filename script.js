@@ -126,55 +126,179 @@ if (glitchTarget) {
 }
 
 // =========================================
-// Symposium Countdown Timer
+// JSON Data Fetching: Events & Symposium Countdown
 // =========================================
-const countdownElement = document.getElementById('symposium-countdown');
+const featuredEventsContainer = document.getElementById('featured-events-container');
+const pastEventsContainer = document.getElementById('past-events-container');
+const noUpcomingMsg = document.getElementById('no-upcoming-events-msg');
+const noPastMsg = document.getElementById('no-past-events-msg');
 
-if (countdownElement) {
-    // Allow for previewing the states via URL parameter
+if (featuredEventsContainer || pastEventsContainer) {
     const urlParams = new URLSearchParams(window.location.search);
-    const previewState = urlParams.get('preview');
+    const dateParam = urlParams.get('date');
+    const simulateNow = dateParam ? new Date(dateParam).getTime() : null;
 
-    // Set to June 5, 2026 at Noon
-    const symposiumDate = new Date('June 5, 2026 12:00:00').getTime();
-    const symposiumEndDate = new Date('June 5, 2026 17:30:00').getTime();
+    fetch('events.json')
+        .then(response => {
+            if (!response.ok) throw new Error("Could not load events data.");
+            return response.json();
+        })
+        .then(events => {
+            let upcomingCount = 0;
+            let pastCount = 0;
 
-    const updateTimer = setInterval(() => {
-        const now = new Date().getTime();
-        const distanceToStart = symposiumDate - now;
-        const distanceToEnd = symposiumEndDate - now;
+            events.forEach(event => {
+                const startDate = new Date(event.startDate).getTime();
+                const endDate = new Date(event.endDate).getTime();
+                const oneWeek = 7 * 24 * 60 * 60 * 1000;
+                
+                // For layout logic, determine "now"
+                const now = simulateNow !== null ? simulateNow : new Date().getTime();
+                const isPastArchive = now > (endDate + oneWeek);
+                const isConcluded = now >= endDate;
 
-        if (distanceToEnd < 0 || previewState === 'concluded') {
-            clearInterval(updateTimer);
-            countdownElement.innerHTML = "<div class='time-box'><span>CONCLUDED</span><small>Thanks for joining!</small></div>";
-            return;
-        } else if (distanceToStart < 0 || previewState === 'ongoing') {
-            // Keep interval running to catch the end time later
-            countdownElement.innerHTML = "<div class='time-box'><span>ONGOING</span><small>Event Started</small></div>";
-            return;
-        }
+                // Build HTML
+                const card = document.createElement('div');
+                card.className = 'featured-event';
+                
+                let registrationHTML = '';
+                if (!isConcluded && event.registrationLink) {
+                    registrationHTML = `
+                    <div class="cta-container" style="margin: 2rem 0;">
+                        <a href="${event.registrationLink}" target="_blank" rel="noopener noreferrer" class="cta-btn">
+                            ${event.registrationText}
+                        </a>
+                    </div>`;
+                }
 
-        // Time calculations
-        const days = Math.floor(distanceToStart / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distanceToStart % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distanceToStart % (1000 * 60 * 60)) / (1000 * 60));
+                let timelineHTML = '';
+                if (event.timeline && event.timeline.length > 0) {
+                    timelineHTML = `
+                    <h3 style="margin-top: 3rem; color: var(--accent-blue); font-family: var(--font-heading);">${event.programTitle || 'Program'}</h3>
+                    <div class="program-timeline">
+                        ${event.timeline.map(item => {
+                            let itemDescHTML = item.description ? `<p>${item.description}</p>` : '';
+                            let talksHTML = '';
+                            if (item.talks && item.talks.length > 0) {
+                                talksHTML = `
+                                <div class="talk-details">
+                                    ${item.talks.map(talk => `
+                                        <div class="talk">
+                                            <div class="speaker-info">
+                                                <span class="speaker-name">${talk.speakerName}</span>
+                                                ${talk.speakerTitle ? `<span class="speaker-title">${talk.speakerTitle}</span>` : ''}
+                                            </div>
+                                            ${talk.talkTitle ? `<div class="talk-title">${talk.talkTitle}</div>` : ''}
+                                        </div>
+                                    `).join('')}
+                                </div>`;
+                            }
+                            return `
+                            <div class="timeline-item">
+                                <div class="time">${item.time}</div>
+                                <div class="session">
+                                    <h4>${item.title}</h4>
+                                    ${itemDescHTML}
+                                    ${talksHTML}
+                                </div>
+                            </div>`;
+                        }).join('')}
+                    </div>`;
+                }
 
-        // Inject the HTML
-        countdownElement.innerHTML = `
-            <div class="time-box">
-                <span>${days}</span>
-                <small>Days</small>
-            </div>
-            <div class="time-box">
-                <span>${hours}</span>
-                <small>Hours</small>
-            </div>
-            <div class="time-box">
-                <span>${minutes}</span>
-                <small>Mins</small>
-            </div>
-        `;
-    }, 1000);
+                let toggleBtnHTML = '';
+                if (isPastArchive) {
+                    card.classList.add('past-event-collapsed');
+                    if (event.type === 'symposium') {
+                        toggleBtnHTML = `
+                        <div style="margin-top: 1.5rem;">
+                            <a href="${event.id}.html" class="cta-btn toggle-details-btn" style="text-decoration: none; display: inline-block;">View Symposium Page</a>
+                        </div>`;
+                    } else {
+                        toggleBtnHTML = `
+                        <div style="margin-top: 1.5rem;">
+                            <button class="cta-btn toggle-details-btn" onclick="this.closest('.featured-event').classList.toggle('past-event-collapsed'); this.innerText = this.innerText === 'View Details' ? 'Hide Details' : 'View Details';">View Details</button>
+                        </div>`;
+                    }
+                }
+
+                let hostTextHTML = isPastArchive ? '' : `<p>${event.hostText}</p>`;
+                let countdownHTML = isPastArchive ? '' : `<div class="countdown" id="countdown-${event.id}"></div>`;
+
+                card.innerHTML = `
+                    <div class="event-header">
+                        <div class="event-title">
+                            <span class="event-meta">${event.meta}</span>
+                            <h2>${event.title}</h2>
+                            ${hostTextHTML}
+                        </div>
+                        ${countdownHTML}
+                    </div>
+                    <div class="event-details-wrapper">
+                        <p>${event.description}</p>
+                        ${registrationHTML}
+                        ${timelineHTML}
+                    </div>
+                    ${toggleBtnHTML}
+                `;
+
+                if (isPastArchive && pastEventsContainer) {
+                    pastEventsContainer.appendChild(card);
+                    pastCount++;
+                } else if (!isPastArchive && featuredEventsContainer) {
+                    featuredEventsContainer.appendChild(card);
+                    upcomingCount++;
+                }
+
+                // Countdown logic for this event
+                const countdownElement = card.querySelector(`#countdown-${event.id}`);
+                if (countdownElement) {
+                    const updateTimer = () => {
+                        const tickNow = simulateNow !== null ? simulateNow : new Date().getTime();
+                        const distanceToStart = startDate - tickNow;
+                        const distanceToEnd = endDate - tickNow;
+
+                        if (distanceToEnd < 0) {
+                            countdownElement.innerHTML = "<div class='time-box'><span>CONCLUDED</span><small>Thanks for joining!</small></div>";
+                        } else if (distanceToStart < 0) {
+                            countdownElement.innerHTML = "<div class='time-box'><span>ONGOING</span><small>Event Started</small></div>";
+                        } else {
+                            const days = Math.floor(distanceToStart / (1000 * 60 * 60 * 24));
+                            const hours = Math.floor((distanceToStart % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                            const minutes = Math.floor((distanceToStart % (1000 * 60 * 60)) / (1000 * 60));
+                            countdownElement.innerHTML = `
+                                <div class="time-box">
+                                    <span>${days}</span>
+                                    <small>Days</small>
+                                </div>
+                                <div class="time-box">
+                                    <span>${hours}</span>
+                                    <small>Hours</small>
+                                </div>
+                                <div class="time-box">
+                                    <span>${minutes}</span>
+                                    <small>Mins</small>
+                                </div>
+                            `;
+                        }
+                    };
+                    updateTimer(); // Call immediately
+                    // Only run interval if we aren't simulating a specific fixed date and event isn't already concluded
+                    if (simulateNow === null && now < endDate) {
+                        setInterval(updateTimer, 1000);
+                    }
+                }
+            });
+
+            if (upcomingCount > 0 && noUpcomingMsg) noUpcomingMsg.style.display = 'none';
+            if (upcomingCount === 0 && noUpcomingMsg) noUpcomingMsg.style.display = 'block';
+
+            if (pastCount > 0 && noPastMsg) noPastMsg.style.display = 'none';
+            if (pastCount === 0 && noPastMsg) noPastMsg.style.display = 'block';
+        })
+        .catch(error => {
+            console.error("Fetch error:", error);
+        });
 }
 
 // =========================================

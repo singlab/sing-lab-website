@@ -1,0 +1,118 @@
+[
+  {
+    "id": "computational-artifice",
+    "type": "symposium",
+    "meta": "Symposium | June 5, 2026",
+    "title": "Computational Artifice",
+    "hostText": "Hosted by the members of the UC Davis SING Lab, with support from the Center for AI and Experimental Futures and the UC Davis Dept. of Cinema & Digital Media.",
+    "description": "Computational Artifice brings together work at the intersection of AI, procedural generation, interactive narrative, and computational media. Rather than treating computation as a tool for seamless realism, the symposium asks how artifice itself can become expressive through rules, simulations, generative systems, authored constraints, and algorithmic surprises that produce new forms of agency, performance, and meaning. The event explores how constructed intelligences and procedural worlds can reveal, rather than conceal, the expressive machinery of digital media.",
+    "registrationLink": "https://docs.google.com/forms/d/e/1FAIpQLScVfi7z1BPNcmndShRwLk8wIqdSqa9dcKUMktS1G_Dhzg869Q/viewform?usp=header",
+    "registrationText": "Register for the Symposium",
+    "startDate": "2026-06-05T12:00:00",
+    "endDate": "2026-06-05T17:30:00",
+    "programTitle": "Symposium Program",
+    "timeline": [
+      {
+        "time": "12:00 PM",
+        "title": "Opening Remarks",
+        "description": "Joshua McCoy"
+      },
+      {
+        "time": "12:15 PM",
+        "title": "Keynote 1",
+        "talks": [
+          {
+            "speakerName": "Sam Shields"
+          }
+        ]
+      },
+      {
+        "time": "01:15 PM",
+        "title": "Keynote 2",
+        "talks": [
+          {
+            "speakerName": "Bjarke Larsen"
+          }
+        ]
+      },
+      {
+        "time": "02:15 PM",
+        "title": "Microtalk",
+        "talks": [
+          {
+            "speakerName": "Jasmine Otto",
+            "speakerTitle": " &ndash; Adjunct Faculty, University of San Francisco",
+            "talkTitle": "“Multiplayer Bitsy”"
+          }
+        ]
+      },
+      {
+        "time": "02:20 PM",
+        "title": "Break & Demos",
+        "description": "Refreshments provided"
+      },
+      {
+        "time": "03:00 PM",
+        "title": "Short Talks and Discussion",
+        "talks": [
+          {
+            "speakerName": "Isaac Karth",
+            "speakerTitle": " &ndash; Independent Researcher",
+            "talkTitle": "\"Why You Like Emergent Simulations\""
+          },
+          {
+            "speakerName": "Max Kreminski",
+            "speakerTitle": " &ndash; Assistant Professor, Design Tech @ Cornell Tech",
+            "talkTitle": "“Six Fingers on the Author's Hand”"
+          },
+          {
+            "speakerName": "Shm Almeda",
+            "speakerTitle": " &ndash; PhD Candidate, EECS @ UC Berkeley",
+            "talkTitle": "\"Puppets\""
+          },
+          {
+            "speakerName": "Mike Treanor",
+            "speakerTitle": " &ndash;  Associate Professor, Computer Science @ American University",
+            "talkTitle": "\"Systems as Insight\""
+          }
+        ]
+      },
+      {
+        "time": "04:00 PM",
+        "title": "Research Talks: SING Lab & Affiliated Scholars",
+        "talks": [
+          {
+            "speakerName": "Arunpreet Sandhu",
+            "speakerTitle": " &ndash; PhD Student, CS @ UC Davis",
+            "talkTitle": "\"Generating Dramatic Tension Through Social Roles\""
+          },
+          {
+            "speakerName": "Kyle Mitchell",
+            "speakerTitle": " &ndash; PhD Candidate, CS @ UC Davis",
+            "talkTitle": "\"Towards Digital Actors\""
+          },
+          {
+            "speakerName": "Nicholas Treynor",
+            "speakerTitle": " &ndash; PhD Student, CS @ UC Davis",
+            "talkTitle": "\"Superposition & Storylets for Better Narrative Planning\""
+          },
+          {
+            "speakerName": "Saba Kolahchian",
+            "speakerTitle": " &ndash; PhD Student, Communication @ UC Davis",
+            "talkTitle": " \"From Chiral Networks to Cognitive Load: How Design Dictates Player Behavior\""
+          }
+        ]
+      },
+      {
+        "time": "04:45 PM",
+        "title": "Community Discussion",
+        "description": "What is our role in shaping experimental futures?"
+      },
+      {
+        "time": "05:30 PM",
+        "title": "Closing Remarks & Dinner",
+        "description": "Transition to Dunloe on Olive (5:30 PM - 8:00 PM)"
+      }
+    ]
+  }
+]
